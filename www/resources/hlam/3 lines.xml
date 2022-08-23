@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<LandXML xmlns="http://www.inframodel.fi/inframodel" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+				xsi:schemaLocation="http://www.inframodel.fi/inframodel https://buildingsmart.fi/infra/schema/4.0.3/inframodel.xsd"  
+					date="2021-12-09" time="12:02:34" version="1.2" language="Finnish" readOnly="false">
+
+	<Surfaces name="test lines">
+		<Surface name="squares">
+			<SourceData>
+				<Breaklines>
+					<Breakline brkType="standard" name="26">
+						<PntList3D>6678270.238120 25500483.459751 4.031000 6678270.123001 25500483.656003 4.035000 6678271.220001 25500484.334003 4.030000 6678271.328722 25500484.138524 4.021000 6678270.238120 25500483.459751 4.031000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="23"/>
+							<Property label="terrainCodingDesc" value="line"/>
+							<Property label="surfaceCoding" value="90"/>
+							<Property label="surfaceCodingDesc" value="None"/>
+						</Feature>
+					</Breakline>
+					<Breakline brkType="standard" name="27">
+						<PntList3D>6678268.479001 25500482.180003 4.363000 6678268.251001 25500482.457003 4.385000 6678269.124001 25500483.134003 4.392000 6678269.338001 25500482.849003 4.377000 6678268.479001 25500482.180003 4.363000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="23"/>
+							<Property label="terrainCodingDesc" value="line"/>
+							<Property label="surfaceCoding" value="90"/>
+							<Property label="surfaceCodingDesc" value="None"/>
+						</Feature>
+					</Breakline>
+					<Breakline brkType="standard" name="28">
+						<PntList3D>6678269.469741 25500482.915811 4.394000 6678269.276001 25500483.183003 4.428000 6678269.952001 25500483.681003 4.429000 6678270.149847 25500483.411889 4.396000 6678269.469741 25500482.915811 4.394000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="23"/>
+							<Property label="terrainCodingDesc" value="line"/>
+							<Property label="surfaceCoding" value="90"/>
+							<Property label="surfaceCodingDesc" value="None"/>
+						</Feature>
+					</Breakline>
+				</Breaklines>
+			</SourceData>
+		</Surface>
+	</Surfaces>
+</LandXML>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<LandXML xmlns="http://www.inframodel.fi/inframodel" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+				xsi:schemaLocation="http://www.inframodel.fi/inframodel https://buildingsmart.fi/infra/schema/4.0.3/inframodel.xsd"  
+					date="2020-02-27" time="12:02:34" version="1.2" language="Finnish" readOnly="false">
+	<Units>
+		<Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="HPA" diameterUnit="meter" widthUnit="meter" heightUnit="meter" velocityUnit="kilometersPerHour" angularUnit="grads" directionUnit="grads" elevationUnit="meter"/>
+	</Units>
+	<CoordinateSystem name="GK25" epsgCode="3879" rotationAngle="0" verticalCoordinateSystemName="N2000"/>
+	<FeatureDictionary name="inframodel" version="4.0.4">
+		<DocFileRef name="Inframodel extensions" location="https://buildingsmart.fi/infra/inframodel/pages/extensions.html"/>
+	</FeatureDictionary>
+	<Project name="kaapelit_kaapeliputket.xml" desc="kaapelit_kaapeliputket.xml">
+		<Feature code="IM_codings" source="inframodel">
+			<Property label="terrainCoding" value="Infra"/>
+			<Property label="surfaceCoding" value="InfraBIM"/>
+			<Property label="infraCoding" value="InfraBIM"/>
+		</Feature>
+	</Project>
+	<Application name="PlainView" manufacturer="Slava" version="0.0" manufacturerURL="" timeStamp="2022-06-06T11:21:34+02:00">
+		<Author createdBy="" createdByEmail="" company="" companyURL=""/>
+	</Application>
+	<PipeNetworks name="kaapelit">
+		<PipeNetwork name="kaapeliputket" pipeNetType="other" state="proposed">
+			<Structs>
+				<Struct name="1" desc="YK1500B" state="proposed" elevSump="1.389" elevRim="2.226">
+					<Center>6679255.628001 25600442.864003</Center>
+					<CircStruct diameter="1.5" desc="kaapelikaivo 1" material="betoni" thickness="0.08"/>
+					<Invert elev="0.0" flowDir="out" refPipe="Telia 1"/>
+					<Invert elev="0.0" flowDir="out" refPipe="Telia 2"/>
+					<Invert elev="0.0" flowDir="out" refPipe="Telia 3"/>
+					<Invert elev="0.0" flowDir="out" refPipe="Elisa 1"/>
+					<Invert elev="0.0" flowDir="out" refPipe="Elisa 2"/>
+					<Invert elev="0.0" flowDir="out" refPipe="Elisa 3"/>
+					<Invert elev="0.0" flowDir="out" refPipe="DNA 1"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value=""/>
+						<Property label="rimType" value=""/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="infraCoding" value="97"/>
+						<Property label="infraCodingDesc" value="Kaapelikaivo"/>
+						<Property label="terrainCoding" value="97"/>
+						<Property label="terrainCodingDesc" value="Kaapelikaivo"/>
+						<Property label="surfaceCoding" value="332300"/>
+						<Property label="surfaceCodingDesc" value="Kaapelikaivot"/>
+					</Feature>
+				</Struct>
+				<Struct name="2" desc="YK1500B" state="proposed" elevSump="0.633" elevRim="2.155">
+					<Center>6679229.305001 25600433.251003</Center>
+					<CircStruct diameter="1.5" desc="kaapelikaivo 2" material="betoni" thickness="0.08"/>
+					<Invert elev="0.0" flowDir="in" refPipe="Telia 1"/>
+					<Invert elev="0.0" flowDir="in" refPipe="Telia 2"/>
+					<Invert elev="0.0" flowDir="in" refPipe="Telia 3"/>
+					<Invert elev="0.0" flowDir="in" refPipe="Elisa 1"/>
+					<Invert elev="0.0" flowDir="in" refPipe="Elisa 2"/>
+					<Invert elev="0.0" flowDir="in" refPipe="Elisa 3"/>			
+					<Invert elev="0.0" flowDir="in" refPipe="DNA 1"/>
+					<Feature code="IM_struct" source="inframodel">
+						<Property label="structLabel" value=""/>
+						<Property label="rimType" value=""/>
+						<Property label="heightDeposit" value="0.000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="terrainCoding" value="97"/>
+						<Property label="terrainCodingDesc" value="Kaapelikaivo"/>
+						<Property label="surfaceCoding" value="332300"/>
+						<Property label="surfaceCodingDesc" value="Kaapelikaivot"/>
+					</Feature>
+				</Struct>
+			</Structs>
+			<Pipes>		
+				<Pipe name="Telia 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679229.630001 25600433.809003 1.166000"/>
+						<Property label="pipeEnd" value="6679245.751001 25600441.774003 1.596000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Telia 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Telia 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679245.751001 25600441.774003 1.596000"/>
+						<Property label="pipeEnd" value="6679255.036001 25600444.973003 1.007000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Telia 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Telia 2" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679229.746001 25600433.729003 1.461000"/>
+						<Property label="pipeEnd" value="6679245.605001 25600441.520003 1.794000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Telia 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Telia 2" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679245.605001 25600441.520003 1.794000"/>
+						<Property label="pipeEnd" value="6679255.083001 25600444.802003 1.142000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Telia 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Telia 3" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679229.726001 25600433.709003 1.161000"/>
+						<Property label="pipeEnd" value="6679245.803001 25600441.644003 1.580000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Telia 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Telia 3" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679245.803001 25600441.644003 1.580000"/>
+						<Property label="pipeEnd" value="6679255.116001 25600444.826003 1.016000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Telia 110mm punainen"/>
+					</Feature>
+				</Pipe>
+
+				<Pipe name="Elisa 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679255.399001 25600444.379003 1.146000"/>
+						<Property label="pipeEnd" value="6679245.798001 25600441.128003 1.789000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Elisa 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Elisa 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679245.798001 25600441.128003 1.789000"/>
+						<Property label="pipeEnd" value="6679229.997001 25600433.395003 1.455000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Elisa 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Elisa 2" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679229.980001 25600433.236003 1.441000"/>
+						<Property label="pipeEnd" value="6679245.862001 25600440.999003 1.768000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Elisa 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Elisa 2" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679245.862001 25600440.999003 1.768000"/>
+						<Property label="pipeEnd" value="6679255.542001 25600444.275003 1.146000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Elisa 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Elisa 3" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679230.049001 25600433.252003 1.142000"/>
+						<Property label="pipeEnd" value="6679246.019001 25600441.068003 1.555000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Elisa 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="Elisa 3" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679246.019001 25600441.068003 1.555000"/>
+						<Property label="pipeEnd" value="6679255.524001 25600444.311003 1.006000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="Elisa 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				
+				<Pipe name="DNA 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679254.932001 25600442.702003 1.667000"/>
+						<Property label="pipeEnd" value="6679254.668001 25600442.667003 1.628000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="DNA 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="DNA 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679254.668001 25600442.667003 1.628000"/>
+						<Property label="pipeEnd" value="6679253.884001 25600443.000003 1.243000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="DNA 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="DNA 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679253.884001 25600443.000003 1.243000"/>
+						<Property label="pipeEnd" value="6679253.163001 25600443.030003 1.225000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="DNA 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="DNA 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679253.163001 25600443.030003 1.225000"/>
+						<Property label="pipeEnd" value="6679246.401001 25600440.798003 1.561000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="DNA 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="DNA 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679246.401001 25600440.798003 1.561000"/>
+						<Property label="pipeEnd" value="6679231.617001 25600433.288003 1.551000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="DNA 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="DNA 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679231.617001 25600433.288003 1.551000"/>
+						<Property label="pipeEnd" value="6679230.946001 25600433.358003 1.606000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="DNA 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="DNA 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679230.946001 25600433.358003 1.606000"/>
+						<Property label="pipeEnd" value="6679228.776001 25600434.827003 1.732000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="DNA 110mm punainen"/>
+					</Feature>
+				</Pipe>
+				<Pipe name="DNA 1" state="proposed" refStart="1" refEnd="2" slope="0.0">
+					<CircPipe diameter="0.11" desc="kaapeliputki 100 punainen" material="PEH" thickness="0.01"/>
+					<Feature code="IM_pipe" source="inframodel">
+						<Property label="pressureClass" value=""/>
+						<Property label="elevType" value="invert level"/>
+						<Property label="pipeStart" value="6679228.776001 25600434.827003 1.732000"/>
+						<Property label="pipeEnd" value="6679227.445001 25600436.116003 1.618000"/>
+					</Feature>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="surfaceCoding" value="332100"/>
+						<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+						<Property label="terrainCoding" value="110p"/>
+						<Property label="terrainCodingDesc" value="DNA 110mm punainen"/>
+					</Feature>
+				</Pipe>
+			</Pipes>
+		</PipeNetwork>
+	</PipeNetworks>
+</LandXML>

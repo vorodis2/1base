@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<LandXML xmlns="http://buildingsmart.fi/inframodel/404" xmlns:im="http://buildingsmart.fi/im/404" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://buildingsmart.fi/inframodel/404 https://buildingsmart.fi/infra/schema/4.0.4/inframodel.xsd http://buildingsmart.fi/im/404 https://buildingsmart.fi/infra/schema/4.0.4/im.xsd" version="1.2" date="2022-06-06" time="11:21:34" language="finnish" readOnly="0">
+	<Units>
+		<Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="HPA" diameterUnit="meter" widthUnit="meter" heightUnit="meter" velocityUnit="kilometersPerHour" angularUnit="grads" directionUnit="grads" elevationUnit="meter"/>
+	</Units>
+	<CoordinateSystem name="GK25" epsgCode="3879" rotationAngle="0" verticalCoordinateSystemName="N2000"/>
+	<FeatureDictionary name="inframodel" version="4.0.4">
+		<DocFileRef name="Inframodel extensions" location="https://buildingsmart.fi/infra/inframodel/pages/extensions.html"/>
+	</FeatureDictionary>
+	<Project name="kaapelit_kaapeliputket.xy.xml" desc="kaapelit_kaapeliputket.xy.xml">
+		<Feature code="IM_codings" source="inframodel">
+			<Property label="terrainCoding" value="Infra"/>
+			<Property label="surfaceCoding" value="InfraBIM"/>
+			<Property label="infraCoding" value="InfraBIM"/>
+		</Feature>
+	</Project>
+	<Application name="PlainView" manufacturer="Slava" version="0.0" manufacturerURL="" timeStamp="2022-06-06T11:21:34+02:00">
+		<Author createdBy="" createdByEmail="" company="" companyURL=""/>
+	</Application>
+	<Surfaces name="kaapelit_kaapeliputket">
+		<Surface name="332100">
+			<SourceData>
+				<Breaklines>
+					<Breakline brkType="standard" name="Telia 1">
+						<PntList3D>6679229.630000 25600433.809000 1.166000 6679245.751000 25600441.774000 1.596000 6679255.036000 25600444.973000 1.007000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="110p"/>
+							<Property label="terrainCodingDesc" value="Kaapelin suojaputki 110mm punainen"/>
+						</Feature>
+					</Breakline>
+					<Breakline brkType="standard" name="Telia 2">
+						<PntList3D>6679229.746000 25600433.729000 1.461000 6679245.605000 25600441.520000 1.794000 6679255.083000 25600444.802000 1.142000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="110p"/>
+							<Property label="terrainCodingDesc" value="Kaapelin suojaputki 110mm punainen"/>
+						</Feature>
+					</Breakline>
+					<Breakline brkType="standard" name="Telia 3">
+						<PntList3D>6679229.726000 25600433.709000 1.161000 6679245.803000 25600441.644000 1.580000 6679255.116000 25600444.826000 1.016000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="110p"/>
+							<Property label="terrainCodingDesc" value="Kaapelin suojaputki 110mm punainen"/>
+						</Feature>
+					</Breakline>
+					<Breakline brkType="standard" name="Elisa 1">
+						<PntList3D>6679255.399000 25600444.379000 1.146000 6679245.798000 25600441.128000 1.789000 6679229.997000 25600433.395000 1.455000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="110p"/>
+							<Property label="terrainCodingDesc" value="Kaapelin suojaputki 110mm punainen"/>
+						</Feature>
+					</Breakline>
+					<Breakline brkType="standard" name="Elisa 2">
+						<PntList3D>6679229.980000 25600433.236000 1.441000 6679245.862000 25600440.999000 1.768000 6679255.542000 25600444.275000 1.146000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="110p"/>
+							<Property label="terrainCodingDesc" value="Kaapelin suojaputki 110mm punainen"/>
+						</Feature>
+					</Breakline>
+					<Breakline brkType="standard" name="Elisa 3">
+						<PntList3D>6679230.049000 25600433.252000 1.142000 6679246.019000 25600441.068000 1.555000 6679255.524000 25600444.311000 1.006000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="110p"/>
+							<Property label="terrainCodingDesc" value="Kaapelin suojaputki 110mm punainen"/>
+						</Feature>
+					</Breakline>
+					<Breakline brkType="standard" name="DNA 1">
+						<PntList3D>6679254.932000 25600442.702000 1.667000 6679254.668000 25600442.667000 1.628000 6679253.884000 25600443.000000 1.243000 6679253.163000 25600443.030000 1.225000 6679246.401000 25600440.798000 1.561000 6679231.617000 25600433.288000 1.551000 6679230.946000 25600433.358000 1.606000 6679228.776000 25600434.827000 1.732000 6679227.445000 25600436.116000 1.618000</PntList3D>
+						<Feature code="IM_coding" source="inframodel">
+							<Property label="terrainCoding" value="110p"/>
+							<Property label="terrainCodingDesc" value="Kaapelin suojaputki 110mm punainen"/>
+						</Feature>
+					</Breakline>
+				</Breaklines>
+			</SourceData>
+			<Feature code="IM_coding" source="inframodel">
+				<Property label="surfaceCoding" value="332100"/>
+				<Property label="surfaceCodingDesc" value="Kaapelisuojausrakenteet"/>
+				<Property label="infraCoding" value="332100"/>
+				<Property label="infraCodingDesc" value="Kaapelisuojausrakenteet"/>
+			</Feature>
+		</Surface>
+		<Surface name="332300">
+			<SourceData>
+				<Breaklines>
+				</Breaklines>
+				<DataPoints name="97">
+					<PntList3D>6679255.628000 25600442.864000 0.000000 6679229.305000 25600433.251000 0.000000</PntList3D>
+					<Feature code="IM_coding" source="inframodel">
+						<Property label="terrainCoding" value="97"/>
+						<Property label="terrainCodingDesc" value="Kaapelikaivo"/>
+					</Feature>
+				</DataPoints>
+			</SourceData>
+			<Feature code="IM_coding" source="inframodel">
+				<Property label="surfaceCoding" value="332300"/>
+				<Property label="surfaceCodingDesc" value="Kaapelikaivot"/>
+				<Property label="infraCoding" value="332300"/>
+				<Property label="infraCodingDesc" value="Kaapelikaivot"/>
+			</Feature>
+		</Surface>
+	</Surfaces>
+</LandXML>
